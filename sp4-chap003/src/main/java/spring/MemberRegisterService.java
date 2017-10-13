@@ -8,7 +8,7 @@ public class MemberRegisterService {
 	public MemberRegisterService(MemberDao memberDao) {
 		this.memberDao = memberDao;
 	}
-	
+
 	public void regist(RegisterRequest req) {
 		Member member = memberDao.selectByEmail(req.getEmail());
 		if (member != null) {
@@ -17,8 +17,6 @@ public class MemberRegisterService {
 		Member newMember = new Member(
 				req.getEmail(), req.getPassword(), req.getName(),
 				new Date());
+		memberDao.insert(newMember);
 	}
-	
-	
-	
 }
