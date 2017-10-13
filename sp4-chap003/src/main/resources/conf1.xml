@@ -7,12 +7,8 @@
 
 	<bean id="memberDao" class="spring.MemberDao">
 	</bean>
-
-	<bean id="memberRegSvc" class="spring.MemberRegisterService">
-		<constructor-arg ref="memberDao" />
+	
+	<bean id="memberPrinter" class="spring.MemberPrinter">
 	</bean>
-
-	<bean id="changePwdSvc" class="spring.ChangePasswordService">
-		<constructor-arg ref="memberDao" />
-	</bean>
-</beans>
+	 
+ </beans>

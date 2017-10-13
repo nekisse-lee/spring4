@@ -5,14 +5,12 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
 		http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+	<import resource="classpath:conf2.xml" />
+
 	<bean id="memberDao" class="spring.MemberDao">
 	</bean>
 
-	<bean id="memberRegSvc" class="spring.MemberRegisterService">
-		<constructor-arg ref="memberDao" />
+	<bean id="memberPrinter" class="spring.MemberPrinter">
 	</bean>
 
-	<bean id="changePwdSvc" class="spring.ChangePasswordService">
-		<constructor-arg ref="memberDao" />
-	</bean>
 </beans>

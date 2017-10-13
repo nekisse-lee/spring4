@@ -1,6 +1,7 @@
 package spring;
 
 public class MemberInfoPrinter {
+
 	private MemberDao memDao;
 	private MemberPrinter printer;
 
@@ -8,8 +9,8 @@ public class MemberInfoPrinter {
 		this.memDao = memberDao;
 	}
 
-	public void setMemberPrinter(MemberPrinter memberPrinter) {
-		this.printer = memberPrinter;
+	public void setPrinter(MemberPrinter printer) {
+		this.printer = printer;
 	}
 
 	public void printMemberInfo(String email) {
@@ -21,5 +22,4 @@ public class MemberInfoPrinter {
 		printer.print(member);
 		System.out.println();
 	}
-
 }
