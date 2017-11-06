@@ -9,4 +9,8 @@
 		<property name="format" value="%s, 안녕하세요!" />
 	</bean>
 
+
+	<bean id="greeter1" class="chap002.Greeter">
+		<property name="format" value="안녕하세요!, %s님!"  />
+	</bean>
 </beans>
