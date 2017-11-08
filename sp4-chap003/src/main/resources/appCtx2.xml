@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	 http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="memberDao" class="spring.MemberDao">
+	</bean>
+
+	<bean id="memberRegSvc" class="spring.MemberRegisterService">
+		<constructor-arg ref="memberDao" />
+	</bean>
+
+	<bean id="changePwdSvc" class="spring.ChangePasswordService">
+		<constructor-arg ref="memberDao" />
+	</bean>
+
+	<bean id="memberPrinter" class="spring.MemberPrinter">
+	</bean>
+
+	<bean id="listPrinter" class="spring.MemberListPrinter">
+		<constructor-arg ref="memberDao" />
+		<constructor-arg ref="memberPrinter" />
+	</bean>
+
+	<bean id="infoPrinter" class="spring.MemberInfoPrinter">
+		<property name="memberDao" ref="memberDao" />
+		<property name="printer" ref="memberPrinter" />
+	</bean>
+
+		
+		<!-- VersionPrinter 클래스의 set 메서드 사용 -->
+	<bean id="versionPrinter" class="spring.VersionPrinter">
+		<property name="majorVersion" value="4"></property>
+		<property name="minorVersion" value="1"></property>
+	</bean>
+	
+	
+	<!-- 
+	   VersionPrinter 클래스의 생성자 초기화 사용
+	<bean id="versionPrinter" class="spring.VersionPrinter">
+		<constructor-arg value="4"></constructor-arg>
+		<constructor-arg value="1"></constructor-arg>
+		
+	</bean> -->
+</beans>
