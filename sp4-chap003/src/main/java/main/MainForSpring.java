@@ -57,7 +57,7 @@ public class MainForSpring {
 		RegisterRequest req = new RegisterRequest();
 		req.setEmail(arg[1]);
 		req.setName(arg[2]);
-		req.setPasswod(arg[3]);
+		req.setPassword(arg[3]);
 		req.setConfirmPassword(arg[4]);
 		
 		if (!req.isPasswordEqualToConfirmPassword()) {

@@ -6,6 +6,8 @@ public class VersionPrinter {
 	private int minorVersion;
 
 	
+	public VersionPrinter() {
+	}
 	
 	
 	

@@ -16,7 +16,7 @@ public class MemberRegisterService {
 			throw new AlreadyExistingMemberException("dup email" + req.getEmail());
 		}
 		Member newMember = new Member(
-				req.getEmail(), req.getPasswod(), req.getName(),
+				req.getEmail(), req.getPassword(), req.getName(),
 				new Date());
 		memberDao.insert(newMember);
 	}

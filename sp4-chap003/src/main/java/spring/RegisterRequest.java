@@ -15,11 +15,11 @@ public class RegisterRequest {
 		this.email = email;
 	}
 
-	public String getPasswod() {
+	public String getPassword() {
 		return passwod;
 	}
 
-	public void setPasswod(String passwod) {
+	public void setPassword(String passwod) {
 		this.passwod = passwod;
 	}
 
@@ -42,6 +42,10 @@ public class RegisterRequest {
 	
 	public boolean isPasswordEqualToConfirmPassword() {
 		return passwod.equals(confirmPassword);
+	}
+
+	public void getName(String name) {
+		System.out.println(name);
 	}
 	
 	
