@@ -16,15 +16,12 @@
 	<bean id="memberRegSvc" class="spring.MemberRegisterService">
 	</bean>
 
-	<bean id="printer" class="spring.MemberPrinter">
-	<!-- 	<qualifier value="sysout" /> -->
-	</bean>
-	
-	<bean id="printer2" class="spring.MemberPrinter">
-		<property name="printer" ref="printer2"></property>
-	</bean>
+	<bean id="printer" class="spring.MemberPrinter" />
+	<!-- <qualifier value="sysout" /> -->
+	<bean id="printer2" class="spring.MemberPrinter" />
 
 	<bean id="infoPrinter" class="spring.MemberInfoPrinter">
+		<property name="printer" ref="printer2"></property>            <!-- 명시적 의존주입이 자동의존주입보다 우선!! -->
 	</bean>
 
 </beans>
