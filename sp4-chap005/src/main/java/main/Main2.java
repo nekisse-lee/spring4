@@ -13,7 +13,6 @@ public class Main2 {
 
 		ApplicationContext ctx = 
 				new AnnotationConfigApplicationContext(JavaConfig2.class);
-		
 		MemberRegisterService regSvc=
 				ctx.getBean("memberRegSvc", MemberRegisterService.class);
 		MemberInfoPrinter infoPrinter =
