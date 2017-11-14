@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$//1111111111.iml" filepath="$PROJECT_DIR$//1111111111.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RemoteSystemsTempFiles/RemoteSystemsTempFiles.iml" filepath="$PROJECT_DIR$/RemoteSystemsTempFiles/RemoteSystemsTempFiles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/main/main.iml" filepath="$PROJECT_DIR$/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sp4-chap002/sp4-chap002.iml" filepath="$PROJECT_DIR$/sp4-chap002/sp4-chap002.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sp4-chap003/sp4-chap003.iml" filepath="$PROJECT_DIR$/sp4-chap003/sp4-chap003.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sp4-chap004/sp4-chap004.iml" filepath="$PROJECT_DIR$/sp4-chap004/sp4-chap004.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sp4-chap005/sp4-chap005.iml" filepath="$PROJECT_DIR$/sp4-chap005/sp4-chap005.iml" />
+    </modules>
+  </component>
+</project>
